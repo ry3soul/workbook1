@@ -5,7 +5,9 @@
 
 <h1>Welcome to my thic website</h1>
 <p>Login to see a cool video</p>
-
+  
+// adding login form 
+  
 <form action="login.php" method="POST">
   <label for="email">Email:</label><br>
   <input type="text" id="email" name="email" value=""><br>
@@ -13,7 +15,8 @@
   <input type="password" id="password" name="password" value=""><br>
   <input type ="submit" value="Login">
 </form>
-
+  
+ //session  start so the program knows when someone has logged in
 <?php
 session_start();
 isset($_SESSION["Email"]);
